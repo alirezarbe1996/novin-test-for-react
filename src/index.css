@@ -1,0 +1,142 @@
+/*Peyda font*/
+@font-face {
+    font-family: "Peyda Regular";
+    src: url("assets/fonts/peyda/PeydaWeb-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Peyda Black";
+    src: url("assets/fonts/peyda/PeydaWeb-Black.woff2");
+}
+
+@font-face {
+    font-family: "Peyda Bold";
+    src: url("assets/fonts/peyda/PeydaWeb-Bold.woff2");
+}
+
+@font-face {
+    font-family: "Peyda Extra Bold";
+    src: url("assets/fonts/peyda/PeydaWeb-ExtraBold.woff2");
+}
+
+@font-face {
+    font-family: "Peyda Extra Light";
+    src: url("assets/fonts/peyda/PeydaWeb-ExtraLight.woff2");
+}
+
+@font-face {
+    font-family: "Peyda Light";
+    src: url("assets/fonts/peyda/PeydaWeb-Light.woff2");
+}
+
+@font-face {
+    font-family: "Peyda Medium";
+    src: url("assets/fonts/peyda/PeydaWeb-Medium.woff2");
+}
+
+@font-face {
+    font-family: "Peyda Semi Bold";
+    src: url("assets/fonts/peyda/PeydaWeb-SemiBold.woff2");
+}
+
+@font-face {
+    font-family: "Peyda Thin";
+    src: url("assets/fonts/peyda/PeydaWeb-Thin.woff2");
+}
+
+
+
+:root {
+    /* COLORS  */
+    --black: #000;
+    --white: #fff;
+    --imperial-red:#ED2939;
+    --imperial-red-opacity7: rgba(180, 27, 38, 0.7);
+    --dark: #3A3A3A;
+    --gray: #505050;
+    --gray-hover: rgba(77, 77, 77, 0.09);
+    --gray-opacity3: #525f604e;
+    --gray-opacity7: rgba(57, 64, 64, 0.71);
+    --light: #FFFBF8;
+    --cream: #F1DEC9;
+    --cream-opacity7: rgba(241, 222, 201, 0.75);
+    --cream-opacity3: rgba(241, 222, 201, 0.31);
+    --cream-light: #FFF8ED;
+    --cream-dark: #311e06;
+    --cream-dark-opacity1: rgba(49, 30, 6, 0.17);
+    --cream-dark-opacity3: rgba(49, 30, 6, 0.3);
+    --cream-dark-opacity7: rgba(49, 30, 6, 0.7);
+
+
+    /* box shadows */
+    --shadow-1: 0px 5px 20px -5px rgba(0.5, 0.5, 1, 0.5);
+    --shadow-2: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-3: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-4: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-5: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+body{
+    font-family: "Peyda Regular";
+    overflow-y: auto;
+}
+
+.bg-cream{
+    background-color: var(--cream);
+    color: var(--dark);
+}
+.bg-lightCream{
+    background-color: var(--cream-light);
+    color: var(--gray-opacity7);
+}
+
+.peyda-regular{
+    font-family: "Peyda Regular" !important;
+}
+.peyda-black {
+    font-family: "Peyda Black" !important;
+}
+
+.peyda-bold {
+    font-family: "Peyda Bold" !important;
+}
+
+.peyda-extra-bold {
+    font-family: "Peyda Extra Bold" !important;
+}
+
+.peyda-extra-light {
+    font-family: "Peyda Extra Light" !important;
+}
+
+.peyda-light {
+    font-family: "Peyda Light" !important;
+}
+
+.peyda-medium {
+    font-family: "Peyda Medium" !important;
+}
+
+.peyda-semi-bold {
+    font-family: "Peyda Semi Bold" !important;
+}
+.letter-space1{
+    letter-spacing: 1px;
+}
+.peyda-thin {
+    font-family: "Peyda Thin" !important;
+}
+
+/*fade InUp Animation*/
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+.fadeInUp-animation {
+    animation: 1.5s fadeInUp;
+}
